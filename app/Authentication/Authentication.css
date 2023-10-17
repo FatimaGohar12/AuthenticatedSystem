@@ -1,0 +1,24 @@
+.auth-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  backface-visibility: hidden;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.sign-up {
+  transform: rotateY(180deg);
+}
+
+.auth-container.sign-up .sign-in {
+  transform: rotateY(180deg);
+}
+
+.auth-container.sign-in .sign-up {
+  transform: rotateY(0);
+}
